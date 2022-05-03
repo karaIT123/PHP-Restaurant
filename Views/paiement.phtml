@@ -1,0 +1,148 @@
+<?php 
+
+//var_dump($post);
+
+//echo $nbrePersonne;
+//echo gettype($nbrePersonne);
+//echo $prix;
+?>
+<div class="paiement-reservation bg-white">
+    Votre reservation
+</div>
+<div class="distance"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="col-12 bg-white">
+                <p class="paiement-titre">Votre compte</p>
+                <p class="paiement-text"><?= $email ?></p>
+                <!--<p class="paiement-text">email@domain.com</p>-->
+            </div>
+
+            <div class="col-12 bg-white">
+                <p class="paiement-titre">Reserver au nom de</p>
+                <p class="paiement-text">Nom: <?= $nom ?></p>
+                <p class="paiement-text">Tel: <?= $tel ?></p>
+                <p class="paiement-text">1234 Altschul, New York,<br> NY 10027-0000</p>
+            </div>
+
+            <!--<div class="col-12 bg-white">
+                <p class="paiement-titre">Methode de paiement</p>
+                <form action="">
+                    <div class="row cc-container">
+                        
+                        <div class="col-12">
+                            <input class="paiement-input-cc" type="number" name="numbercc" min=0 placeholder="Numero de carte">
+                        </div>
+                        <div class="col-12">
+                            <input class="paiement-input-cc" type="text" name="nomcc" placeholder="Nom sur la carte">   
+                        </div>
+                        <div class="col-9">
+                            <input class="paiement-input-cc" type="date" name="datecc" placeholder="Date d'expiration">  
+                        </div>
+                        <div class="col-3">
+                            <input class="paiement-input-cc" type="number" name="ccvcc" min=0 max=999 placeholder="CCV">  
+                        </div>
+                        <div class="col-12 paiement-btn-div">
+                            <input class="paiement-btn-form" type="submit" value="Payer">
+                        </div>
+                    
+                    </div>
+                </form>
+                
+            </div>-->
+
+            <div class="col-12 bg-white">
+            <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"CAD","value":1.15,"breakdown":{"item_total":{"currency_code":"CAD","value":1},"shipping":{"currency_code":"CAD","value":0},"tax_total":{"currency_code":"CAD","value":0.15}}}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+            </div>
+
+        </div>
+        <div class="col-2">
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="col-12 bg-white">
+                <p class="paiement-titre">Reserver pour le</p>
+                <p class="paiement-text">Le <?= $date ?> à <?= $heure ?></p>
+            </div>
+            <div class="col-12 bg-white">
+                <p class="paiement-titre">Recapitulatif</p>
+                <div class="row paiement-text">
+                    <div class="col-10">Nombre de personnes</div>
+                    <div class="col-2"><?= $nbrePersonne ?></div>
+                    <div class="col-12 "><hr></div>
+                    <div class="col-10">Sous-total</div>
+                    <div class="col-2"><?= $prix ?></div>
+                    <div class="col-10">Rabais</div>
+                    <div class="col-2">$0</div>
+                    <div class="col-10">Taxes</div>
+                    <div class="col-2"><?= $prix * 0.15 ?></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row paiement-text">
+                    <div class="col-1 text-small-msg  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                        </svg>
+                    </div>
+                    <div class="col-11 text-small ">
+                        <ul>
+                            <li>Pour toutes modifications ou annulations, veuillez nous
+                            appélez au +1 987 654 3210, ou nous ecrire au email@domain.com.
+                            </li>
+                            <li>
+                            Veuillez noter aussi que nous contacterons par mail, et par 
+                            téléphone 24H avant la date de réservation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 paiement-btn-div">
+                <input class="paiement-input" type="text" name="coupon" placeholder="Coupon de reduction">
+                <input class="paiement-btn" type="submit" value="Appliquer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br>

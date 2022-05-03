@@ -1,0 +1,444 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+	height: auto; /* à titre d'exemple */
+}
+
+.body{
+	background-color: rgb(245, 245, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+
+.foot {
+    background: #870000;  
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  
+    background: linear-gradient(to right, #190A05, #870000);
+}
+
+.footer-head a{
+    margin:3%;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 2px solid;
+}
+
+.footer-head a:hover{
+    margin:3%;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 2px solid #870000;
+}
+
+.footer-head {
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    color:white;
+}
+
+.footer-bottom {
+    background-color: black;
+    color:white;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+}
+
+.nav{
+    background: #870000;  
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  
+    background: linear-gradient(to right, #190A05, #870000);
+    
+    color: white;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid!important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px  #a01424 solid!important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.card-text {
+    display:  inline-block!important;
+    float:  none!important;
+    text-align:  center!important;
+}
+
+.btn-transparent {
+    margin-top: 3rem;
+    background:  transparent;
+     line-height:  40px;
+     border:  1px solid  #a01424;
+     display:  inline-block;
+     float:  none;
+     text-align:  center;
+     width:  120px;
+     padding:  0px!important;
+     font-size:  14px;
+     color:  white;
+     text-decoration-line: none;
+}
+
+.btn-transparent:hover {
+    margin-top: 3rem;
+    background:   #a01424;
+     line-height:  40px;
+     border:  1px solid  #a01424;
+     display:  inline-block;
+     float:  none;
+     text-align:  center;
+     width:  120px;
+     padding:  0px!important;
+     font-size:  14px;
+     color:  white;
+}
+
+
+
+.fonce {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    background: rgba(0, 0, 0, 0.171);
+    padding-bottom: 0px!important;
+
+}
+
+.espace {
+    margin-top: 15rem;
+    font-weight:900;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.titre {
+    font-family:cursive;
+    font-size: 3rem;
+    font-weight: 700;
+   text-align: center;
+}
+
+.titre2 {
+    font-weight: 700;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.img1 {
+    padding-left: 1rem;
+    max-width: 80%;
+}
+
+.distance {
+    margin-top: 3rem;
+}
+
+.griser {
+    color: gray;
+}
+
+.liste {
+    /*margin-right: 5rem!important;
+    margin-left: 5rem;*/
+    background-color: rgb(255, 255, 255);
+    padding: 0px!important;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.menu-mere {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    
+}
+
+.menu-titre {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.menu-griser {
+    color: gray;
+    font-weight: 200!important;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    border: 0px;
+    border-bottom: grey 1px solid;
+    border-radius: 0%;
+    padding-bottom: 1rem;
+}
+
+.prix {
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a01424;
+}
+/**************   Reservation **************/
+.form-main-size>::placeholder {
+    font-family:cursive;
+    font-weight:100;
+}
+.form-size {
+    width: 350px;
+    margin: .3rem .3rem .3rem .3rem;
+    padding: .8rem .8rem;
+    box-sizing: border-box;
+    border: rgb(240, 240, 240) 1px solid;
+    /*color: #a01424;*/
+    color: rgb(74, 80, 86);
+}
+
+.form-size:focus {
+    outline: none;
+    border:  1px solid  #a01424;
+}
+
+.call-us-div{
+    padding: 2rem 2rem;
+    margin-top: 5rem;
+    border-right: 1px solid #a01424;
+    border-bottom: 1px solid #a01424;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.call-us{
+    font-family:cursive;
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.call-us-text {
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(119, 119, 119);
+}
+
+/**************   CONTACT **************/
+
+.contact-mere {
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-main-form>::placeholder{
+    font-family:cursive;
+    font-weight:100;
+}
+
+.contact-form {
+    width: 100%;
+    margin: .5rem .5rem;
+    border: rgb(240, 240, 240) 1px solid;
+    padding: .5rem .5rem;
+    resize: none;
+}
+
+.contact-form:focus {
+    outline: none;
+   border:  1px solid  #a01424;
+}
+
+.contact-titre {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: .3rem .3rem;
+}
+
+.contact-email {
+    color: #d88913;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-number {
+    color: rgb(119, 119, 119);
+    font-family:cursive;
+}
+
+.contact-visit {
+    color: rgb(119, 119, 119);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-btn {
+    width: 30%;
+    margin: .5rem .5rem;
+    border: #a01424 1px solid;
+    padding: .5rem .5rem;
+    resize: none;
+    background-color: transparent;
+    font-size: small;
+    font-weight:200;
+}
+.contact-btn:hover {
+    width: 30%;
+    margin: .5rem .5rem;
+    border: #a01424 1px solid;
+    color: #a01424;
+    padding: .5rem .5rem;
+    resize: none;
+    background-color: transparent;
+}
+
+.icon {
+    color:#a01424;
+}
+
+/**************   CONTACT **************/
+/**************   PAIEMENT **************/
+
+.paiement-reservation {
+    font-size: 2rem;
+    padding: 1rem .5rem 1rem .5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.paiement-titre{
+    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px 0px;
+    padding: .7rem .7rem 0 .7rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+} 
+
+.paiement-text {
+    color: rgb(119, 119, 119);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: .2rem .7rem .7rem .7rem;
+}
+
+.text-small{
+    font-size: small;
+    padding-top: 1.5rem;
+    padding-left: 0px;
+}
+
+.text-small-msg{
+    padding-top: 1.5rem;
+}
+
+.paiement-input{
+    width: 100%;
+    border: rgb(240, 240, 240) 1px solid;
+    border-radius: 2rem;
+    padding: .5rem .5rem;
+}
+
+.paiement-input:focus{
+    outline: none;
+    border:  1px solid  #a01424;
+}
+
+.cc-container{
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+
+.paiement-input-cc {
+    width: 100%;
+    border:rgb(180, 180, 180) 1px solid;
+    padding: .3rem .3rem;
+    margin-top: .3rem;
+}
+
+.paiement-input-cc:focus {
+    outline: none;
+    border:  1px solid  #a01424;
+}
+
+.paiement-btn {
+    width: 30%;
+    margin: .5rem .5rem;
+    border: #a01424 1px solid;
+    padding: .5rem .5rem;
+    resize: none;
+    background-color: transparent;
+    font-size: small;
+    font-weight:200;
+    border-radius: 2rem;
+}
+.paiement-btn:hover {
+    width: 30%;
+    margin: .5rem .5rem;
+    background: #a01424;
+    border: white 1px solid;
+    color: white;
+    padding: .5rem .5rem;
+    resize: none;
+}
+
+.paiement-btn-form {
+    width: 30%;
+    margin: .5rem .5rem;
+    border: #a01424 1px solid;
+    padding: .5rem .5rem;
+    resize: none;
+    background-color: transparent;
+    font-size: small;
+    font-weight:200;
+}
+.paiement-btn-form:hover {
+    width: 30%;
+    margin: .5rem .5rem;
+    background: #a01424;
+    border: white 1px solid;
+    color: white;
+    padding: .5rem .5rem;
+    resize: none;
+}
+
+.paiement-btn-div {
+    text-align: right;
+}

@@ -1,0 +1,38 @@
+<img src="http://localhost/eCom/Views/Image/img10.jpg" alt="" class="img-fluid">
+
+<div class="contact-mere">
+
+    <div class="menu-mere">
+        <div class="menu">
+            <p class="menu-titre">Faire une reservation en ligne</p>
+            <p class="menu-griser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, unde? Nisi aut sit reiciendis, nobis adipisi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex aperiam exercitationem ipsum. Iusto molestias quidem, optio, vero nisi consequuntur                        error voluptate illo praesentium sunt asperiores rem aliquam autem nesciunt!
+            </p>
+        </div>
+    </div>
+
+    <div class="menu">
+
+        <form action="../../eCom/paiement" class="form-main-size" method="POST">
+            <input name="nom" type="text" placeholder="Nom complet" class="form-size">
+            <input name="nbrePersonne" type="number" placeholder="Nombre de personnes (Max 5)" class="form-size" value="2">
+            <br>
+            <input name="tel" type="tel" placeholder="Numero de telephone" class="form-size">
+            <input name="date" type="date" placeholder="Date" class="form-size" value="<?= date("Y-m-d")?>">
+            <br>
+            <input name="email" type="email" placeholder="Adresse email" class="form-size">
+            <input name="heure" type="time" placeholder="Heure" class="form-size" value="21:00">
+            <br>
+            <div class="distance"></div>
+            <input type="submit" value="Reserver" class="contact-btn">
+        </form>
+
+        <div class="distance"></div>
+        <div class="call-us-div">
+            <p class="call-us-text">ou appleler nous</p>
+            <span class="call-us">+ 1 (987) 654 3210</span>
+        </div>
+        <br>
+    </div>
+
+</div>
